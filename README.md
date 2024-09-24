@@ -11,7 +11,7 @@ SRIC-resources-shared-platform
 
 此项目提供了线路切换功能
 
-运行项目前 需在 /SRIC-FMS-web/src/main.ts 中 配置
+运行项目前 需在 /SRIC-RSP-web/src/main.ts 中 配置
 
 ```
 const VLANurl = 虚拟局域网地址
@@ -25,13 +25,13 @@ const NETurl = 公网地址
 
 若不需要线路切换 可将对应的逻辑删除
 
-还需在 /SRIC-FMS-web/vue.config.js 中配置前端端口
+还需在 /SRIC-RSP-web/vue.config.js 中配置前端端口
 
 ------
 
 ### 0.1.2 后端配置
 
-后端需在 /SRIC-FMS-api/src/main/resporces/application.properties 中进行配置
+后端需在 /SRIC-RSP-api/src/main/resporces/application.properties 中进行配置
 
 ```
 server.port 配置后端 api 端口
@@ -93,7 +93,7 @@ JDK corretto-17.0.10
 
 ### 0.2.1 前端环境
 
-前端项目位于目录 /SRIC-FMS-web
+前端项目位于目录 /SRIC-RSP-web
 
 在 /front 打开终端
 
@@ -131,17 +131,17 @@ npm run build
 
 ```
 
-待编译完成后,编译文件将会输出在 /SRIC-FMS-web/dist 目录中
+待编译完成后,编译文件将会输出在 /SRIC-RSP-web/dist 目录中
 
 ------
 
 ### 0.2.2 后端环境
 
-后端文件位于目录 /SRIC-FMS-api
+后端文件位于目录 /SRIC-RSP-api
 
-使用 maven 更新 /SRIC-FMS-api/pom.xml 以更新项目依赖
+使用 maven 更新 /SRIC-RSP-api/pom.xml 以更新项目依赖
 
-配置 jdk 后 运行 /SRIC-FMS-api/src/main/java/com/spring/springboot/SpringbootApplication.java 以在开发环境启动服务
+配置 jdk 后 运行 /SRIC-RSP-api/src/main/java/com/spring/springboot/SpringbootApplication.java 以在开发环境启动服务
 
 ------
 
@@ -149,7 +149,7 @@ npm run build
 
 可以使用本地 或 在线数据库
 
-创建数据库并运行查询 /SRIC-FMS-database/sric_fms.sql
+创建数据库并运行查询 /SRIC-RSP-database/sric_fms.sql
 
 数据库查询文件包含部分数据 适当删除和修改以正常使用
 
